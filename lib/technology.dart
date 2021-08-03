@@ -7,10 +7,10 @@ import 'haber_vm.dart';
 
 class Technology extends StatefulWidget {
   @override
-  _SportState createState() => _SportState();
+  _TechnologyState createState() => _TechnologyState();
 }
 
-class _SportState extends State<Technology> {
+class _TechnologyState extends State<Technology> {
   HaberVm haberVm = HaberVm();
   Future<HaberVm> fetchAlbum() async {
     final response = await http.get(
