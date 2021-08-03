@@ -7,10 +7,10 @@ import 'haber_vm.dart';
 
 class Health extends StatefulWidget {
   @override
-  _SportState createState() => _SportState();
+  _HealthState createState() => _HealthState();
 }
 
-class _SportState extends State<Health> {
+class _HealthState extends State<Health> {
   HaberVm haberVm = HaberVm();
   Future<HaberVm> fetchAlbum() async {
     final response = await http.get(
@@ -48,7 +48,7 @@ class _SportState extends State<Health> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text("Spor"),
+          title: Text("Sağlık"),
         ),
         body: SingleChildScrollView(
             child: Center(
